@@ -1,0 +1,52 @@
+.background-container {
+    background-image: url("https://asphalt9.assets.gameloft.com/assets/bg_banner_desktop_v2_79125a46ce.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.background-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.background-content h1,
+.background-content p {
+    color: #fff;
+    margin: 0;
+}
+
+.background-actions {
+    margin-top: 20px;
+}
+
+.download-button,
+.trailer-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.download-button:hover,
+.trailer-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.download-button {
+    background-color: #f27d0c;
+}
+
+.trailer-button {
+    background-color: #dc3545;
+}   
