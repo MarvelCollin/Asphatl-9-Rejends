@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .background-container {
     background-image: url("https://asphalt9.assets.gameloft.com/assets/bg_banner_desktop_v2_79125a46ce.jpg");
     background-size: cover;

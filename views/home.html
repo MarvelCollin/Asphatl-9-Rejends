@@ -6,14 +6,25 @@
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../../css/global.css">
 </head>
 <body>
+<div class="extend-app"></div>
+
 <div class="background-container">
 <nav class="navbar">
-    <div id="includedContent"></div>
+    <div id="extend-navbar"></div>
 </nav>
 </div>
 
 </body>
 <script src="../js/home.js"></script>
+<script src="../js/global.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        extend('components/navbar.html', 'extend-navbar');
+        extend('components/app.html', 'extend-app');
+    });
+</script>
 </html>
