@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #123112;
+    color: white;
 }
 
 .background-container {
@@ -12,10 +12,13 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
     position: relative;
+    gap: 20vh;
 }
 
 .back-logo {
-    margin-bottom: 40vh;
-    transition: 500ms;
+    margin-top: 20vh;
+    /* transition: 500ms; */
 }
+
