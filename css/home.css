@@ -18,7 +18,9 @@ body {
 }
 
 .back-logo {
-    margin-top: 20vh;
-    /* transition: 500ms; */
+    margin-top: 25vh;
+    margin-bottom: 5vh;
+    transition: 300ms;
+
 }
 
