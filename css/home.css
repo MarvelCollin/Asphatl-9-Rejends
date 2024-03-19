@@ -1,3 +1,6 @@
+* {
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +8,7 @@ body {
 }
 
 .background-container {
-    background-image: url("https://asphalt9.assets.gameloft.com/assets/bg_banner_desktop_v2_79125a46ce.jpg");
+    background-image: linear-gradient(to top, #1b1c1d, transparent 400px), url("https://asphalt9.assets.gameloft.com/assets/bg_banner_desktop_v2_79125a46ce.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -15,12 +18,43 @@ body {
     flex-direction: column;
     position: relative;
     gap: 20vh;
+    /* background-image: linear-gradient(to top, #1b1c1d, transparent 200px); */
 }
 
 .back-logo {
     margin-top: 25vh;
     margin-bottom: 5vh;
     transition: 300ms;
-
 }
 
+.about {
+    background-image: linear-gradient(to bottom, #1b1c1d, #0e1a32);
+}
+
+.about-container {
+    width: 50vw;
+}
+
+.detailed-information {
+    min-width: 30vw;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.title-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+@media screen and (max-width: 768px){
+    iframe {
+        height: 30vw;
+    }
+}

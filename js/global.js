@@ -6,4 +6,3 @@ function extend(path, targetId, page) {
       document.getElementById(page).classList.add("active");
     });
 }
-  

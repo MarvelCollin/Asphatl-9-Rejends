@@ -6,7 +6,6 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #17191b;
 }
 
 /* just use webkit for scrollbar :> lol gk niat utk pake buat semuanya */
@@ -36,3 +35,50 @@ body {
   font-size: 2.2vw;
   transition: all ease-in-out 0.5s;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.underline-red {
+  border-bottom: 5px solid red;
+}
+
+.parralax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 5vw;
+  font-weight: 900;
+  word-spacing: 10px;
+}
+
+.second-title {
+  font-size: 3vw;
+  font-weight: 900;
+  word-spacing: 10px;
+  padding: 5px;
+}
+
+
+.subtitle {
+  font-size: 1.5vw;
+}
+
+.text-center {
+  text-align: center;
+}
+
