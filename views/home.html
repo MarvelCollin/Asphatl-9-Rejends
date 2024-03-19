@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,31 @@
     <link rel="icon" type="image/png" href="../assets/logo.png">
     <link rel="stylesheet" href="../../css/global.css">
 </head>
+
 <body>
-<div class="extend-app"></div>
+    <div class="extend-app"></div>
+    <nav class="navbar">
+        <div id="extend-navbar"></div>
+    </nav>
 
-<div class="background-container">
-<nav class="navbar">
-    <div id="extend-navbar"></div>
-</nav>
-</div>
+    <div class="background-container">
+        <div class="container">
+            <img class="back-logo" src="../assets/side-logo.png" alt="">
+        </div>
+        <div class="button">Download</div>
+    </div>
 
+    <div class="about-section">
+
+    </div>
 </body>
 <script src="../js/home.js"></script>
 <script src="../js/global.js"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        extend('components/navbar.html', 'extend-navbar');
+    document.addEventListener("DOMContentLoaded", function () {
+        extend('components/navbar.html', 'extend-navbar', 'home');
         extend('components/app.html', 'extend-app');
     });
 </script>
+
 </html>
