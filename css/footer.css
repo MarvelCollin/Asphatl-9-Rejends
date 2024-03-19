@@ -1,0 +1,9 @@
+footer, .footer-container {
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    padding-top: 100px;
+    background-image: linear-gradient(to top, #1b1c1d, #1a315f);
+}

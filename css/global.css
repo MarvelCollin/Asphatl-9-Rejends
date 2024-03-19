@@ -22,12 +22,14 @@ body {
   background-color: #888;
 }
 
-.button {
+.button, .btn {
   font-weight: 800;
   font-size: 2vw;
   padding: 2vh;
   border: 3px solid grey;
   transition: all ease-in-out 0.5s;
+  text-decoration: none;
+  color: white;
 }
 
 .button:hover {
@@ -47,7 +49,7 @@ body {
 }
 
 .underline-red {
-  border-bottom: 5px solid red;
+  border-bottom: 0.5vw solid red;
 }
 
 .parralax {
@@ -61,24 +63,44 @@ body {
 }
 
 .title {
+  margin: 0;
+  padding: 0;
   font-size: 5vw;
   font-weight: 900;
-  word-spacing: 10px;
 }
 
 .second-title {
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: 900;
-  word-spacing: 10px;
   padding: 5px;
+  margin: 0.3vw;
 }
 
+.detailed-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subtitle-section {
+  width: 40vw;
+}
 
 .subtitle {
   font-size: 1.5vw;
+  font-weight: 300;
 }
 
 .text-center {
   text-align: center;
+}
+
+.scale {
+  transition: 500ms;
+}
+
+.scale:hover {
+  scale: 1.1;
 }
 
