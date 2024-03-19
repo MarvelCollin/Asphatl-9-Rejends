@@ -40,4 +40,10 @@ footer,
     height: auto;
     padding: 1vw;
   }
+
+  .rights {
+    width: 50vw;
+    font-size: 2vw;
+    padding-bottom: 10vh;
+}
 }
