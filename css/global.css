@@ -32,7 +32,7 @@ body {
   color: white;
 }
 
-.button:hover {
+.button:hover, .btn:hover{
   border: 3px solid red;
   font-size: 2.2vw;
   transition: all ease-in-out 0.5s;
@@ -76,11 +76,12 @@ body {
   margin: 0.3vw;
 }
 
-.detailed-information {
+.flex {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .subtitle-section {
@@ -101,6 +102,8 @@ body {
 }
 
 .scale:hover {
+  transition: 500ms;
   scale: 1.1;
 }
+
 
