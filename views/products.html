@@ -14,13 +14,24 @@
 <nav class="navbar">
     <div id="extend-navbar"></div>
 </nav>
+
+
+
+
+
+
+<footer class="footer-container">
+    <div id="extend-footer"></div>
+</footer>
+
+
 </body>
 <script src="../js/home.js"></script>
 <script src="../js/global.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         extend('components/navbar.html', 'extend-navbar', 'products');
-        extend('components/app.html', 'extend-app');
+        extend('components/footer.html', 'extend-footer', 'products');
     });
 </script>
 </html>
