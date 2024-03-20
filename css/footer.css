@@ -24,6 +24,11 @@ footer,
   padding: 1vw;
 }
 
+.mini-logo {
+  scale: 1.1;
+  transition: 500ms;
+}
+
 .invert {
   filter: invert(100%);
 }
@@ -31,6 +36,7 @@ footer,
 .rights {
     width: 50vw;
     font-size: 1vw;
+    color: white;
     padding-bottom: 10vh;
 }
 
