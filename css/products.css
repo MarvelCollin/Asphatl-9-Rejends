@@ -16,6 +16,10 @@
     justify-content: center;  */
 }
 
+.card-section {
+  transition: 500ms ;
+}
+
 .card {
   border-radius: 8px;
   border: 1px solid #1a315f;
