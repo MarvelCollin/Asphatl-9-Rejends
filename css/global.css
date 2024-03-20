@@ -22,7 +22,8 @@ body {
   background-color: #888;
 }
 
-.button, .btn {
+.button,
+.btn {
   font-weight: 800;
   font-size: 2vw;
   padding: 2vh;
@@ -33,7 +34,8 @@ body {
   background-color: transparent;
 }
 
-.button:hover, .btn:hover{
+.button:hover,
+.btn:hover {
   border: 3px solid red;
   font-size: 2.2vw;
   transition: all ease-in-out 0.5s;
@@ -76,6 +78,7 @@ body {
   font-weight: 900;
   padding: 5px;
   margin: 0.3vw;
+  color: white;
 }
 
 .flex {
@@ -115,3 +118,4 @@ body {
 .ptb-1vw {
   padding: 1vw 0;
 }
+
