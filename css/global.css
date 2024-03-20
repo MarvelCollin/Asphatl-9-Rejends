@@ -30,6 +30,7 @@ body {
   transition: all ease-in-out 0.5s;
   text-decoration: none;
   color: white;
+  background-color: transparent;
 }
 
 .button:hover, .btn:hover{
@@ -107,4 +108,10 @@ body {
   scale: 1.1;
 }
 
+.gap-2vw {
+  gap: 2vw;
+}
 
+.ptb-1vw {
+  padding: 1vw 0;
+}
