@@ -53,5 +53,8 @@ function Carousel(carouselId) {
 }
 
 // Initialize carousels
-new Carousel("carouselA");
-new Carousel("carouselB");
+new Carousel("classS");
+new Carousel("classA");
+new Carousel("classB");
+new Carousel("classC");
+new Carousel("classD");
