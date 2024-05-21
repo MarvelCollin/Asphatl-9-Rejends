@@ -1,36 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../assets/logo.png">
+    <link rel="stylesheet" href="../css/news.css">
     <link rel="stylesheet" href="../../css/global.css">
 </head>
+
 <body>
-<div class="extend-app"></div>
+    <div class="extend-app"></div>
 
-<nav class="navbar">
-    <div id="extend-navbar"></div>
-</nav>
+    <nav class="navbar">
+        <div id="extend-navbar"></div>
+    </nav>
 
-<div class="news-container">
-    <p class="title">ASPHALT</p>
-    <p class="title">NEWS</p>
-</div>
+    <div class="news">
+        <div class="news-container">
+            <div class="title title-section">
+                <p>ASPHALT</p>
+                <p class="text-red">NEWS</p>
+            </div>
+            <div class="card">
+                <div class="card-items">
+                    <img src="../assets/cars/A/Aston-Martin-Vulcan.webp" alt="">
+                    <p class="card-title">WHOOSH! NEW CAR ARRIVED</p>
+                    <p>24.2.2024</p>
+                    <p>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length:
+                        a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In
+                        reality, though, the unity and coherence of ideas among sentences is what constitutes a
+                        paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a
+                        unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a
+                        paper is a paragraph.</p>
+                </div>
+                <div class="card-items">
+                    <img src="../assets/cars/A/Nio-EP9.webp" alt="">
+                    <p class="card-title">GET CAR FOR FREE !</p>
+                    <p>24.2.2024</p>
+                    <p>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length:
+                        a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In
+                        reality, though, the unity and coherence of ideas among sentences is what constitutes a
+                        paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a
+                        unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a
+                        paper is a paragraph.</p>
+                </div>
+                <div class="card-items">
+                    <img src="../assets/cars/A/Aston-Martin-Vulcan.webp" alt="">
+                    <p class="card-title">WHOOSH! NEW CAR ARRIVED</p>
+                    <p>24.2.2024</p>
+                    <p>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length:
+                        a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In
+                        reality, though, the unity and coherence of ideas among sentences is what constitutes a
+                        paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a
+                        unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a
+                        paper is a paragraph.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<footer class="footer-container">
-    <div id="extend-footer"></div>
-</footer>
+    <footer class="footer-container">
+        <div id="extend-footer"></div>
+    </footer>
 
 </body>
 <script src="../js/home.js"></script>
 <script src="../js/global.js"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         extend('components/navbar.html', 'extend-navbar', 'news');
         extend('components/footer.html', 'extend-footer', 'news');
     });
 </script>
+
 </html>

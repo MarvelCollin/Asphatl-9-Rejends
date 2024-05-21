@@ -1,7 +1,42 @@
-.news-container {
-
+.news {
+    padding-top: 14vh;
+    background-image: linear-gradient(to bottom, #1b1c1d, #1a315f);
+    min-height: 100vh;
+    display: flex;
+    gap: 1vw; 
 }
 
-.title {
-    
+.news-container {
+    margin: 3vw;
+}
+
+.title-section {
+    display: flex;
+    gap: 1vw;
+}
+
+.text-red {
+    color: red;
+}
+
+.card {
+    display: flex;
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-items {
+    color:white;
+    width: 25vw;
+    padding: 1vw;
+    background-image: linear-gradient(to top, #1b1c1d, #1a315f);
+    border-radius: 5px;
+}
+
+.card-title {
+    font-weight: BOLD;
+    font-size: 2vw;
 }
