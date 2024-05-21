@@ -1,5 +1,5 @@
 .products {
-  padding-top: 10vh;
+  padding-top: 14vh;
   background-image: linear-gradient(to bottom, #1b1c1d, #1a315f);
   min-height: 100vh;
   display: flex;
@@ -72,7 +72,7 @@ img:hover {
 
 .btn {
   font-size: 1.5vw !important;
-  padding: 0.5vw;
+  padding: 1vw 1.5vw;
 }
 
 .btn:hover {
@@ -85,6 +85,7 @@ img:hover {
   }
 
   .btn {
-    font-size: 100px;
+    padding: 2vw 4vw;
+
   }
 }

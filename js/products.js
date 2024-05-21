@@ -8,51 +8,50 @@ function Carousel(carouselId) {
   let currentIndex = 0;
 
   function showCurrentCard() {
-      cards.forEach((card, index) => {
-          if (index === currentIndex) {
-              card.style.display = "block";
-              card.classList.add("active");
-            } else {
-              card.style.display = "none";
-              card.classList.remove("active");
-          }
-      });
+    cards.forEach((card, index) => {
+      if (index === currentIndex) {
+        card.style.display = "block";
+        card.classList.add("active");
+      } else {
+        card.style.display = "none";
+        card.classList.remove("active");
+      }
+    });
 
-      const prevIndex = (currentIndex - 1 + cards.length) % cards.length;
-      const nextIndex = (currentIndex + 1) % cards.length;
-      cards[prevIndex].style.display = "block";
-      cards[nextIndex].style.display = "block";
+    const prevIndex = (currentIndex - 1 + cards.length) % cards.length;
+    const nextIndex = (currentIndex + 1) % cards.length;
+    cards[prevIndex].style.display = "block";
+    cards[nextIndex].style.display = "block";
 
-      info.innerHTML = `${currentIndex + 1}/${cards.length}`;
+    info.innerHTML = `${currentIndex + 1}/${cards.length}`;
   }
 
   function showNextCard() {
-      currentIndex++;
-      if (currentIndex > cards.length - 1) {
-          currentIndex = 0;
-      }
-      showCurrentCard();
+    currentIndex++;
+    if (currentIndex > cards.length - 1) {
+      currentIndex = 0;
+    }
+    showCurrentCard();
   }
 
   function showPrevCard() {
-      currentIndex--;
-      if (currentIndex < 0) {
-          currentIndex = cards.length - 1;
-      }
-      showCurrentCard();
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = cards.length - 1;
+    }
+    showCurrentCard();
   }
 
   showCurrentCard();
 
   prevButton.addEventListener("click", () => {
-      showPrevCard();
+    showPrevCard();
   });
   nextButton.addEventListener("click", () => {
-      showNextCard();
+    showNextCard();
   });
 }
 
-// Initialize carousels
 new Carousel("classS");
 new Carousel("classA");
 new Carousel("classB");
