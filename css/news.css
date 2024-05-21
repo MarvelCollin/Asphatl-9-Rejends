@@ -28,12 +28,18 @@
     width: 100%;
 }
 
+.card-items:hover {
+    transform: translateY(-5px);
+}
+
 .card-items {
     color:white;
     width: 25vw;
     padding: 1vw;
     background-image: linear-gradient(to top, #1b1c1d, #1a315f);
     border-radius: 5px;
+    transition: 0.5s;
+    text-decoration: none;
 }
 
 .card-title {
