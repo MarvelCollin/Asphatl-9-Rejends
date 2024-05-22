@@ -57,3 +57,4 @@ new Carousel("classA");
 new Carousel("classB");
 new Carousel("classC");
 new Carousel("classD");
+new Carousel("newsCarousel")
