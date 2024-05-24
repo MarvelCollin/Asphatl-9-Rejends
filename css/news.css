@@ -3,90 +3,70 @@
   background-image: linear-gradient(to bottom, #1b1c1d, #1a315f);
   min-height: 100vh;
   display: flex;
+  align-items: center;
   gap: 1vw;
 }
 
 .news-container {
   margin: 3vw;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .carousel {
-    display: flex;
-    gap: 20px;
-    width: 60vw;
+  display: flex;
+  gap: 20px;
+  width: 100%;
 }
 
 .title-section {
   display: flex;
+  align-items: center;
   gap: 1vw;
-}
-
-.text-red {
-  color: red;
+  width: 100%;
 }
 
 .card {
+  padding: 1vw;
   display: flex;
   gap: 20px;
+  width: 100%;
+  max-width: 350px;
+  height: 50vh;
+  transition: 1s;
+  background-image: linear-gradient(to top, #1b1c1d, #1a315f);
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
 }
 
 .card img {
   width: 100%;
-}
-
-.card-items:hover {
-  transform: translateY(-5px);
-}
-
-.card{
-  color: white;
-  width: 350px; 
-  padding: 1vw;
-  background-image: linear-gradient(to top, #1b1c1d, #1a315f);
-  border-radius: 5px;
-  transition: 0.5s;
-  text-decoration: none;
-}
-
-.card a p {
-    text-decoration: none;
-    color: white;
-}
-
-.card-title {
-  font-weight: BOLD;
-  font-size: 2vw;
-}
-
-card-section {
-  transition: 500ms;
-}
-
-/* .card {
-  border-radius: 8px;
-  border: 1px solid #1a315f;
-  margin: 10px;
-  padding: 10px;
-  width: calc(40% - 20px);
-  background-color: #ffffff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  opacity: 0.5;
-  transition: 500ms;
-} */
-
-img:hover {
-  scale: 1 !important;
-}
-
-.active {
-  opacity: 1 !important;
-  scale: 1.05;
-  transition: 500ms;
+  height: auto;
+  border-radius: 5px 5px 0 0;
 }
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+.card a p {
+  text-decoration: none;
+  color: white;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+.card-section {
+  transition: 500ms;
+}
+
+img:hover {
+  scale: 1 !important;
 }
 
 .description {
@@ -109,15 +89,58 @@ img:hover {
 
 .btn {
   font-size: 1.5vw !important;
-  padding: 1vw 1.5vw;
+  padding: 0.5vw;
 }
 
 .btn:hover {
   scale: 1.1;
 }
 
+.button-section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin-top: 1vw;
+}
+
 @media screen and (max-width: 768px) {
+  .title {
+    font-size: 10vw !important;
+  }
+
+  .news {
+    padding-top: 10vh;
+  }
+
+  .news-container {
+    margin: 2vw;
+  }
+
+  .carousel {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .card-title {
+    font-size: 4vw;
+  }
+
+  .description {
+    font-size: 2.5vw;
+  }
+
   .btn {
+    font-size: 3vw !important;
     padding: 2vw 4vw;
+  }
+
+  .button-section {
+    justify-content: center;
+    align-items: center;
   }
 }
