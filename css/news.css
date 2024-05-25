@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   gap: 1vw;
-  }
+}
 
 .news-container {
   margin: 3vw;
@@ -34,7 +34,7 @@
   height: 800px;
   transition: 1s;
   background-image: linear-gradient(to top, #1b1c1d, #1a315f);
-  border-radius: 5px;
+  border-radius: 15px;
   text-decoration: none;
   color: white;
 }
@@ -101,6 +101,88 @@ img:hover {
   display: flex;
   width: 100%;
   margin-top: 1vw;
+}
+
+.news-section {
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #1a315f, #1a315f);
+}
+
+.news-section-header {
+  width: 70vw;
+  height: auto;
+  justify-content: start;
+  align-items: start;
+  padding: 1vw;
+}
+
+.news-section-container {
+  border-radius: 15px;
+  width: 70vw;
+  height: 60vh;
+  background-image: url("../assets/cars/S/Ferrari-FXX-K.webp");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  transition: 1s;
+  display: flex;
+  position: relative;
+}
+
+.news-section-container:hover {
+  .inner-title,
+  .inner-second-title {
+    background-color: rgb(151, 155, 199);
+    color: rgb(36, 36, 124);
+    transition: 2s;
+  }
+
+  .inner-image {
+    justify-content: end !important;
+    align-items: end !important;
+    transform: translateX(100px) scale(1.03);
+    transition: 2s;
+  }
+
+  transition: 2s;
+  scale: 1.01;
+  transform: translateX(20px) scale(1.03);
+}
+
+.inner-image {
+  padding-top: 5px;
+}
+
+.inner-title {
+  border-radius: 0px 5px 5px 0px;
+  padding: 6px;
+  width: fit-content;
+  background-color: rgb(36, 36, 124);
+  font-weight: 800;
+  font-size: 3vw;
+  color: white;
+  transition: 1s;
+}
+
+.inner-second-title {
+  border-radius: 0px 5px 5px 0px;
+  padding: 6px;
+  width: fit-content;
+  background-color: rgb(36, 36, 124);
+  font-weight: 800;
+  transition: 1s;
+  font-size: 2vw;
+  color: white;
+}
+
+.description {
+}
+
+.description p {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6vw;
 }
 
 @media screen and (max-width: 768px) {

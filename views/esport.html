@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../assets/logo.png">
     <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../css/esport.css">
 </head>
+
 <body>
-<div class="extend-app"></div>
+    <div class="extend-app"></div>
 
-<nav class="navbar">
-    <div id="extend-navbar"></div>
-</nav>
+    <nav class="navbar">
+        <div id="extend-navbar"></div>
+    </nav>
 
+    <div class="esport">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/cIPTi0J8wio?autoplay=1&mute=1&loop=1&playlist=cIPTi0J8wio"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="content">
+                <h1>Welcome to My Website</h1>
+                <p>This is a sample text over the background video.</p>
+            </div>
+        </div>
+    </div>
 
-<footer class="footer-container">
-    <div id="extend-footer"></div>
-</footer>
+    <footer class="footer-container">
+        <div id="extend-footer"></div>
+    </footer>
 
 
 </body>
 <script src="../js/home.js"></script>
 <script src="../js/global.js"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         extend('components/navbar.html', 'extend-navbar', 'esport');
         extend('components/footer.html', 'extend-footer', 'esport');
     });
 
 </script>
+
 </html>
