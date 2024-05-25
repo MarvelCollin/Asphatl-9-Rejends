@@ -4,6 +4,6 @@ function extend(path, targetId, page) {
     .then((html) => {
       const $ = document;
       $.getElementById(targetId).innerHTML = html;
-      $.getElementById(page).classList.add("active");
+      $.getElementById(page).classList.add("active-navbar");
     });
 }

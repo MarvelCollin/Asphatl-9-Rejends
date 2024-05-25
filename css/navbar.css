@@ -66,7 +66,7 @@ img:hover {
     transform: scaleX(1);
 }
 
-.active {
+.active-navbar {
     border-bottom: 2px solid red;
 }
 
