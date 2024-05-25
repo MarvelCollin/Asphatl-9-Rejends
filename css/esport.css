@@ -1,40 +1,37 @@
-.esport {
+/* .esport-header {
   padding-top: 1vh;
-  /* background-image: linear-gradient(to bottom, #1b1c1d, #1a315f); */
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1vw;
-}
-
-/* iframe {
-    border-radius: 10px;
-    width: 58vw;
-    height: 33vw;
 } */
 
 .video-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 0;
+  padding-bottom: 56.25%; 
+  overflow: hidden;
 }
 
 .video-container iframe {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vw;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
   z-index: -1;
-  pointer-events: none; /* This makes the iframe unclickable */
+  pointer-events: none; 
 }
 
 .content {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   color: white;
   text-align: center;
-  /* padding-top: 20%; */
 }
