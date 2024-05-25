@@ -5,11 +5,11 @@
   display: flex;
   align-items: center;
   gap: 1vw;
-}
+  }
 
 .news-container {
   margin: 3vw;
-  width: 100%;
+  width: 70vw;
   max-width: 1200px;
 }
 
@@ -30,9 +30,8 @@
   padding: 1vw;
   display: flex;
   gap: 20px;
-  width: 100%;
-  max-width: 350px;
-  height: 50vh;
+  width: 1700px;
+  height: 800px;
   transition: 1s;
   background-image: linear-gradient(to top, #1b1c1d, #1a315f);
   border-radius: 5px;
@@ -97,8 +96,8 @@ img:hover {
 }
 
 .button-section {
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: end;
   display: flex;
   width: 100%;
   margin-top: 1vw;
