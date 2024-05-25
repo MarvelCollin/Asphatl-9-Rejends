@@ -53,7 +53,7 @@ body {
 
 .underline-red {
   border-bottom: 0.5vw solid red;
-  transition: 2s;
+  transition: 1s;
 }
 
 .parralax {

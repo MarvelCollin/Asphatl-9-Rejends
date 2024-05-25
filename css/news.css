@@ -26,6 +26,24 @@
   width: 100%;
 }
 
+.text2, .text1 {
+  transition: 1s;
+}
+
+
+.title-section:hover {
+  .text1 {
+    border: none !important;
+    color: red;
+    transition: 1s;
+  }
+  
+  .text2 {
+    color:white;
+    transition: 1s;
+  }
+}
+
 .card {
   padding: 1vw;
   display: flex;
@@ -121,7 +139,7 @@ img:hover {
 .news-section-header:hover {
   transform: translateX(100px) scale(1.03);
   transition: 2s;
-  
+
   .underline-red {
     /* border: none !important; */
     transform: translateX(80px) scale(1.03);
@@ -156,7 +174,7 @@ img:hover {
     transform: translateX(100px) scale(1.03);
     transition: 1s;
   }
-  
+
   scale: 1.05;
 }
 
