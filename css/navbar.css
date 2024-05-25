@@ -57,7 +57,7 @@ img:hover {
 .menu li a:hover {
     transition: 1s;
     font-size: 33px;
-    border-bottom: 5px solid red;
+    /* border-bottom: 5px solid red; */
 }
 
 .menu li a:hover::before {
