@@ -23,3 +23,4 @@ prevButton.addEventListener('click', () => {
 nextButton.addEventListener('click', () => {
     showSlide(currentIndex + 1);
 });
+
