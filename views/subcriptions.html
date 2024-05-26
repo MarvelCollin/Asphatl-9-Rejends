@@ -16,57 +16,53 @@
     <div id="extend-navbar"></div>
 </nav>
 
-<div class="subs-container">
-    <h1>Subscribe to Our Platform</h1>
-    <form id="subscriptionForm">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <small class="error" id="nameError"></small>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <small class="error" id="emailError"></small>
-        </div>
-        <div class="form-group">
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob">
-            <small class="error" id="dobError"></small>
-        </div>
-        <div class="form-group">
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender">
-                <option value="">Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-            <small class="error" id="genderError"></small>
-        </div>
-        <div class="form-group">
-            <input type="checkbox" id="terms" name="terms">
-            <label for="terms">I agree to the terms and conditions</label>
-            <small class="error" id="termsError"></small>
-        </div>
-        <button type="submit">Subscribe</button>
-    </form>
+<div class="subs">
+    <div class="subs-container">
+        <h1>SIGN IN TO OUR RACE</h1>
+        <form id="subscriptionForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <small class="error" id="nameError"></small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <small class="error" id="emailError"></small>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <small class="error" id="dobError"></small>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="binary">Binary</option>
+                    <option value="helikopter">Helikopter</option>
+                </select>
+                <small class="error" id="genderError"></small>
+            </div>
+            <div class="form-group terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                <small class="error" id="termsError"></small>
+            </div>
+            <button type="submit">Subscribe</button>
+        </form>
+        <div id="loading" class="loading">Loading...</div>
+        <div id="completionMessage" class="completion-message">Subscription successful!</div>
+    </div>
 </div>
-
-
 <footer class="footer-container">
     <div id="extend-footer"></div>
 </footer>
 
-
-</body>
 <script src="../js/home.js"></script>
 <script src="../js/global.js"></script>
 <script src="../js/form.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        extend('components/navbar.html', 'extend-navbar', 'subcriptions');
-        extend('components/footer.html', 'extend-footer', 'subcriptions');
-    });
-</script>
+</body>
 </html>

@@ -1,15 +1,19 @@
-document
-  .getElementById("subscriptionForm")
-  .addEventListener("submit", function (e) {
+document.addEventListener("DOMContentLoaded", function () {
+  extend("components/navbar.html", "extend-navbar", "subscriptions");
+  extend("components/footer.html", "extend-footer", "subscriptions");
+
+  const form = document.getElementById("subscriptionForm");
+  const loading = document.getElementById("loading");
+  const completionMessage = document.getElementById("completionMessage");
+
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // Clear previous errors
     const errors = document.querySelectorAll(".error");
     errors.forEach((error) => (error.style.display = "none"));
 
     let hasError = false;
 
-    // Name validation
     const name = document.getElementById("name").value;
     if (name.length < 2) {
       document.getElementById("nameError").textContent =
@@ -18,7 +22,6 @@ document
       hasError = true;
     }
 
-    // Email validation
     const email = document.getElementById("email").value;
     if (!email.includes("@") || !email.includes(".")) {
       document.getElementById("emailError").textContent =
@@ -27,7 +30,6 @@ document
       hasError = true;
     }
 
-    // Date of Birth validation
     const dob = document.getElementById("dob").value;
     if (!dob) {
       document.getElementById("dobError").textContent =
@@ -36,7 +38,6 @@ document
       hasError = true;
     }
 
-    // Gender validation
     const gender = document.getElementById("gender").value;
     if (!gender) {
       document.getElementById("genderError").textContent =
@@ -45,7 +46,6 @@ document
       hasError = true;
     }
 
-    // Terms and Conditions validation
     const terms = document.getElementById("terms").checked;
     if (!terms) {
       document.getElementById("termsError").textContent =
@@ -55,7 +55,11 @@ document
     }
 
     if (!hasError) {
-      alert("Subscription successful!");
-      // Here you can handle the form submission, e.g., sending the data to a server
+      loading.style.display = "block";
+      setTimeout(function () {
+        loading.style.display = "none";
+        completionMessage.style.display = "block";
+      }, 2000); 
     }
   });
+});
