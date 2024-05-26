@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../assets/logo.png">
     <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../css/subscriptions.css">
 </head>
 <body>
 <div class="extend-app"></div>
@@ -15,7 +16,42 @@
     <div id="extend-navbar"></div>
 </nav>
 
-
+<div class="subs-container">
+    <h1>Subscribe to Our Platform</h1>
+    <form id="subscriptionForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <small class="error" id="nameError"></small>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <small class="error" id="emailError"></small>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <small class="error" id="dobError"></small>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <small class="error" id="genderError"></small>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I agree to the terms and conditions</label>
+            <small class="error" id="termsError"></small>
+        </div>
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
 
 
 <footer class="footer-container">
@@ -26,6 +62,7 @@
 </body>
 <script src="../js/home.js"></script>
 <script src="../js/global.js"></script>
+<script src="../js/form.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         extend('components/navbar.html', 'extend-navbar', 'subcriptions');
