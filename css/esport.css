@@ -58,3 +58,102 @@
   border: 5px solid red;
   transition: 2s;
 }
+
+.carousel {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.event-details {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+}
+
+.event-details h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.event-details p {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.prize {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #e44c65;
+}
+
+.watch-btn {
+  background-color: #e44c65;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.watch-btn:hover {
+  background-color: #c23b53;
+  transform: translateY(-2px);
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}
