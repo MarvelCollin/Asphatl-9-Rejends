@@ -260,3 +260,13 @@
   visibility: visible;
   bottom: -70px;
 }
+
+.sponsors img {
+  width: 4vw;
+  padding: 2vw;
+}
+
+.github {
+  filter: invert(100%);
+  
+}
